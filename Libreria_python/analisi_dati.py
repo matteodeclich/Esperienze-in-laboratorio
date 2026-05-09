@@ -1,4 +1,3 @@
-!pip install uncertainties
 import numpy as np
 import matplotlib as mtp
 import scipy as sp
