@@ -12,7 +12,7 @@ from scipy import stats
 from scipy.constants import g
 from matplotlib.ticker import ScalarFormatter
 from matplotlib.ticker import StrMethodFormatter
-
+!pip install uncertanties
 from uncertainties import ufloat
 from uncertainties import unumpy as unp
 from uncertainties.umath import sqrt
