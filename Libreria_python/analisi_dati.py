@@ -133,10 +133,11 @@ def compatibilita_valore(misura, valore_vero, nome="misura"):
     nome : str
         Nome della misura usato nella stampa
     """
+    # Calcoliamo il modulo della differenza usando i valori nominali (float puri)
     diff = np.abs(misura.nominal_value - valore_vero)
+    
+    # Calcolo di |t|
     t = diff / misura.std_dev
-    diff = np.abs(misura - valore_vero)
-
  
     print(f"Compatibilità di {nome} con {valore_vero:.8g}: |t| = {t:.8g}")
  
