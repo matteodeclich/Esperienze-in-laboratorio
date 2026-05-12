@@ -134,7 +134,7 @@ def compatibilita_valore(misura, valore_vero, nome="misura"):
         Nome della misura usato nella stampa
     """
     # Calcoliamo il modulo della differenza usando i valori nominali (float puri)
-    diff = np.abs(misura.nominal_value - valore_vero)
+    diff = abs(misura.nominal_value - valore_vero)
     
     # Calcolo di |t|
     t = diff / misura.std_dev
