@@ -133,8 +133,8 @@ def compatibilita_valore(misura, valore_vero, nome="misura"):
     nome : str
         Nome della misura usato nella stampa
     """
-    diff = abs(misura - valore_vero)
-    t = diff.nominal_value / diff.std_dev
+    diff = np.abs(misura.nominal_value - valore_vero)
+    t = diff / misura.std_dev
  
     print(f"Compatibilità di {nome} con {valore_vero:.8g}: |t| = {t:.8g}")
  
