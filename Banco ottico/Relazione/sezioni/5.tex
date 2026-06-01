@@ -1,0 +1,73 @@
+\section{Prisma a facce parallele}
+Quando un raggio luminoso attraversa un prisma a facce parallele, subisce due rifrazioni come in figura.
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[scale=1.5]
+        % Definizione delle coordinate (A e B sono la base inferiore)
+        \coordinate (A) at (0,0);       % Angolo retto inferiore sinistro
+        \coordinate (B) at (0,5);       % Angolo retto inferiore destro
+        \coordinate (C) at (2.5,2.5);       % Angolo superiore destro (inizio lato obliquo)
+        \coordinate (D) at (2.5,0); 
+        \coordinate (E) at (-1.5, 1.7);
+        \coordinate (F) at (0,1.7);
+        \coordinate (G) at (-1.5, 1.2);
+        \coordinate (H) at (4,1.2);
+        \coordinate (I) at (2.5, 1.2);
+        \coordinate (J) at (4, 1.7);
+        % --- DISEGNO DEL TRAPEZIO RETTANGOLO ---
+        \draw[thick, fill=blue!5] (A) -- (B) -- (C) -- (D) -- cycle;
+        \pic [draw, angle radius=1cm, angle eccentricity=1.6, fill=green!22] {angle = A--B--C};
+        \node[anchor=north] at (-0.5,5) [font=\small] {$\alpha=\ang{45}$};
+        \draw[red, thick] (-1.5, 1.2)--(0, 1.7);
+        \draw[red, thick] (0,1.7)--(2.5, 1.2);
+        \draw[red, thick] (2.5, 1.2)--(4, 1.7);
+        \draw[dashed] (-1.5, 1.7)--(0,1.7);
+        \draw[dashed] (2.5, 1.2)--(4,1.2);
+        \node[anchor=north] at (-0.5,5) [font=\small] {$\alpha=\ang{45}$};
+        \pic [draw, angle radius=1cm, "$\theta$", angle eccentricity=1.6, fill=red!22] {angle = E--F--G};
+        \pic [draw, angle radius=1cm, "$\theta$"{right, xshift=20pt, yshift=3pt} angle eccentricity=1.6, fill=red!22] {angle = H--I--J};
+        % --- AGGIUNTA: Prolungamento raggio incidente per evidenziare d ---
+        \draw[dotted, black, thick] (0,1.7) -- (3.5, 2.866666666666);
+        
+        % --- AGGIUNTA: Evidenziazione distanza d tra le parallele ---
+        \draw[<->, blue] (3.7, 1.6) -- (3.3, 2.8);
+        \node[blue, right] at (3, 2.1) {$d$};
+        
+        % --- AGGIUNTA: Spessore h sul lato più in basso ---
+        \draw[<->, >=stealth] (0, -0.3) -- (2.5, -0.3);
+        \node[below] at (1.25, -0.3) {$h$};
+        
+    \end{tikzpicture}
+    \caption{Schema della deviazione di un raggio incidente in un prisma a base trapezoidale}
+\end{figure}
+
+Si osserva che il raggio uscente dal prisma risulta parallelo al raggio incidente, spostato di una distanza d che dipende dall'angolo di incidenza secondo la relazione
+\begin{equation}
+    \label{eq:spostamento-facce}
+    d = h \operatorname{sen}\theta \left( 1 - \frac{\cos\theta}{\sqrt{n^2 - \operatorname{sen}^2\theta}} \right)
+\end{equation}
+Sono state raccolte le misure dello spostamento per diversi angoli di incidenza. Ciascuna è stata confrontata con il valore teorico previsto dalla \eqref{eq:spostamento-facce}, con spessore del prisma trapezoidale $h=(32\pm1)$ mm e indice di rifrazione determinato nelle misure dell'angolo di deviazione minima.
+Si raccolgono i dati nella tabella seguente:\\
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{ccc}
+\toprule
+\textbf{Angolo} (\unit{\degree}) & \textbf{Distanza dal centro} (\unit{mm}) & \textbf{Distanza attesa} (\unit{mm}) \\
+\midrule
+10 & \qty{2 \pm 0.5}{}  & \qty{1.97 \pm 0.21}{}  \\
+20 & \qty{4 \pm 0.5}{}  & \qty{4.08 \pm 0.26}{}  \\
+30 & \qty{6 \pm 0.5}{}  & \qty{6.46 \pm 0.32}{}  \\
+40 & \qty{9 \pm 0.5}{}  & \qty{9.27 \pm 0.40}{}  \\
+50 & \qty{12 \pm 0.5}{} & \qty{12.68 \pm 0.50}{} \\
+\bottomrule
+\end{tabular}
+\caption{Confronto tra le distanze dal centro misurate sperimentalmente e i valori teorici attesi al variare dell'angolo d'incidenza.}
+\label{tab:distanze_angoli}
+\end{table}
+
+Si considera un errore di \qty{0.5}{mm} sulla misura della distanza sperimentale. L'errore sulla distanza attesa è invece dovuto all'incertezza di \ang{1} sulla misura degli angoli di incidenza e all'errore sulla larghezza del prisma. Si osserva una piena compatibilità delle misure entro una deviazione standard.
+
+
+
+
