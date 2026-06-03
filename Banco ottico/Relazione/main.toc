@@ -2,7 +2,7 @@
 \babel@toc {italian}{}\relax 
 \contentsline {section}{\numberline {1}Descrizione e obiettivi}{2}{section.1}%
 \contentsline {section}{\numberline {2}Fasi dell'esperienza}{2}{section.2}%
-\contentsline {section}{\numberline {3}Legge di Snell e reversibilià del cammino ottico}{3}{section.3}%
+\contentsline {section}{\numberline {3}Legge di Snell e reversibilità del cammino ottico}{3}{section.3}%
 \contentsline {section}{\numberline {4}Angolo di deviazione minima}{6}{section.4}%
 \contentsline {section}{\numberline {5}Prisma a facce parallele}{7}{section.5}%
 \contentsline {section}{\numberline {6}Legge dei punti coniugati e ingrandimento}{8}{section.6}%
