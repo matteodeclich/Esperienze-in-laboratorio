@@ -1,0 +1,115 @@
+\documentclass[a4paper,12pt]{article}
+
+% --- Geometria e Lingua ---
+\usepackage[a4paper, top=2.5cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[autostyle,italian=guillemets]{csquotes}
+
+% --- Matematica e Simboli ---
+\usepackage{amsfonts, amssymb, amsmath, amsthm, xfrac}
+\usepackage{mathtools, mathrsfs}
+\usepackage[mathscr]{eucal}
+\usepackage{braket, dsfont, bbold}
+\usepackage{cancel, MnSymbol}
+\usepackage{derivative}
+
+% --- Grafica e Tabelle ---
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{bm}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{sidecap}
+\usepackage[export]{adjustbox}
+\usepackage{array, booktabs, multirow, tabularx}
+\usepackage[table]{xcolor}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{fit, shapes.geometric, decorations.pathmorphing, decorations.pathreplacing, decorations.shapes}
+
+% --- Scienza ---
+\usepackage{isotope}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+
+% --- Bibliografia e Layout ---
+\usepackage[backend=biber, sorting=nyt]{biblatex}
+\addbibresource{Bibliografia.bib}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{fancyhdr}
+\usepackage{emptypage}
+\usepackage{afterpage}
+\usepackage{multicol}
+\usepackage{appendix}
+\usepackage{dirtytalk}
+\usepackage{verbatim, verbatimbox}
+\usepackage{lipsum, blindtext}
+
+% --- Hyperlinks (va caricato per ultimo) ---
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false,
+    linktoc=all,
+    linkcolor=black,
+    hidelinks
+}
+
+% --- Configurazioni Personalizzate ---
+\pagestyle{fancy}
+\rhead{}
+\setlength{\columnsep}{1cm}
+\setcounter{secnumdepth}{3}
+\usepackage{parskip}
+\setlength{\skip\footins}{0.8 cm}
+\setlength{\footnotesep}{0.4 cm}
+
+\newcommand{\dder}[2]{\dfrac{\partial #1}{\partial #2}}
+\newcommand{\tder}[2]{\tfrac{\partial #1}{\partial #2}}
+\DeclareMathOperator\erf{erf}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+
+% --- Documento ---
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+        
+        {\Large Università degli Studi di Milano-Bicocca}\\
+        {\Large Dipartimento di Fisica \say{Giuseppe Occhialini}}\\
+        \vspace{0.5cm}
+        {\Huge \textbf{Bilancia Elettrostatica di Coulomb}}\\
+        
+        \vspace{1.5cm}
+        {\large A.A. 2025-2026}\\
+        
+        \vspace{2cm}
+        {\large \textbf{Realizzato in data:}}\\
+        {\large 28 Aprile 2026}\\
+        
+        \vspace{1.5cm}
+        {\large \textbf{Gruppo Beta 5:}}\\
+        {\large Matteo Declich}\\
+        {\large Federico Bernabei}\\
+        {\large Pietro Bellotti}\\
+        
+        \vspace{1.5cm}
+        {\large \textbf{Docente:}}\\
+        {\large M. Martinelli}\\
+        
+        \vfill
+        \vspace{0.8cm}
+        
+    \end{center}
+\end{titlepage}
+
+\tableofcontents 
+\newpage
+
+\input{Main/Relazione}
+
+\end{document}
