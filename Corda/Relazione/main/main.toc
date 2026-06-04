@@ -1,0 +1,8 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {section}{\numberline {1}Descrizione e obiettivi}{2}{section.1}%
+\contentsline {section}{\numberline {2}Dipendenza della frequenza dal numero di armonica}{3}{section.2}%
+\contentsline {section}{\numberline {3}Dipendenza della frequenza dalla tensione}{5}{section.3}%
+\contentsline {section}{\numberline {4}Dipendenza della frequenza dalla lunghezza del tratto di corda teso}{7}{section.4}%
+\contentsline {section}{\numberline {5}Dipendenza della frequenza dalla massa lineare}{9}{section.5}%
+\contentsline {section}{\numberline {6}Osservazioni}{11}{section.6}%
