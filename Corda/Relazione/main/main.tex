@@ -36,16 +36,17 @@
 \usetikzlibrary{fit, shapes.geometric, decorations.pathmorphing, decorations.pathreplacing, decorations.shapes}
 
 % --- Scienza ---
-\usepackage{siunitx}
 \usepackage{isotope}
-\usepackage[version=4]{mhchem} % mhchem e chemformula possono confliggere, meglio usarne uno
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
 
 % --- Bibliografia e Layout ---
-\usepackage[backend=biber, sorting=nyt]{biblatex}
-\addbibresource{Bibliografia.bib}
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{bibliografia.bib}
 \usepackage{setspace}
 \onehalfspacing
 \usepackage{fancyhdr}
+\setlength{\headheight}{15pt}
 \usepackage{emptypage}
 \usepackage{afterpage}
 \usepackage{multicol}
@@ -110,6 +111,5 @@
 \newpage
 
 \input{./Relazione}
-
-
+\printbibliography[heading=bibintoc]
 \end{document}
