@@ -1,5 +1,4 @@
-\documentclass[a4paper,12pt]{article} % Cambiato da report ad article
-
+\documentclass[a4paper,12pt]{article} 
 % --- Geometria e Lingua ---
 \usepackage[a4paper, top=2.5cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
 \usepackage[italian]{babel}
@@ -55,7 +54,7 @@
 \usepackage{verbatim, verbatimbox}
 \usepackage{lipsum, blindtext}
 
-% --- Hyperlinks (va caricato per ultimo) ---
+% --- Hyperlinks ---
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=false,
@@ -107,10 +106,16 @@
     \end{center}
 \end{titlepage}
 
-\tableofcontents % Aggiunto l'indice
+\tableofcontents
 \newpage
 
-\input{./Relazione}
-\nocite{calvi2025}
+\input{sezioni/1.tex}
+\input{sezioni/2.tex}
+\input{sezioni/3.tex}
+\input{sezioni/4.tex}
+\input{sezioni/5.tex}
+\input{sezioni/6.tex}
+
+\nocite{*}
 \printbibliography[heading=bibintoc]
 \end{document}

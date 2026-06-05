@@ -1,0 +1,53 @@
+\section{Dipendenza della frequenza dal numero di armonica}
+
+Nella prima parte dell’esperienza è stata studiata la formazione delle onde stazionarie su una corda vibrante mantenendo costante la lunghezza e la tensione ad essa applicata, variando la frequenza della forzante esterna.  
+La lunghezza della corda è stata misurata con un metro a nastro, ottenendo $L = \qty{2.487 \pm 0.015}{m}$, mentre per il tratto vibrante utilizzato nelle misure si è ottenuto
+$L_{\text{tratto}} = \qty{0.657 \pm 0.015}{m}$. L'incertezza sulle lunghezze è stata determinata assumendo errori di allineamento tra il metro e la strumentazione, oltre all'allungamento a cui la corda era sottoposta durante le misure.
+Tramite bilancia si è misurata la massa della corda, il cui valore è $m = (5.2 \pm 0.5)\ \text{g}$, da cui si ricava la massa lineare $\mu = \frac{m}{L} = \qty{2.1 \pm 0.2}{g/m}$.
+
+La tensione della corda è dovuta esclusivamente alla massa del supporto appeso, ossia $m_{supporto} = \qty{ 80.6 \pm 0.5}{g}$.  
+Sono state ricercate sperimentalmente le condizioni di risonanza corrispondenti alle prime quattro armoniche della corda vibrante. Le frequenze misurate sono riportate in Tabella 1, assumendo un'incertezza pari a $\sigma_f = \qty{0.5}{Hz}$, che corrisponde all'ampiezza dell'intervallo di valori in cui si è osservata la condizione di risonanza.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ccc}
+\hline
+$\mathbf{n}$ & \ $\mathbf{f_n}$ (\unit{Hz}) & $\mathbf{\sigma_f}$ (\unit{Hz})\\
+\hline
+1 & 16.0 & 0.5\\
+2 & 32.5 & 0.5\\
+3 & 48.0 & 0.5\\
+4 & 63.5 & 0.5\\
+\hline
+\end{tabular}
+\caption{Frequenze e incertezze al variare di n, numero di armonica.}
+\end{table}
+\newpage
+I dati sono stati interpolati linearmente con un fit passante per l'origine, riportato in Figura 1.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Immagini/n.png}
+    \caption{Interpolazione della frequenza in funzione del numero armonico con un parametro libero.}
+\end{figure}
+
+Il test del $\chi^2$ restituisce un $\Tilde{\chi}_o^2$=0.16, che per tre gradi di libertà corrisponde ad una probabilità di adattamento del 92.6\%. Si conferma perciò la dipendenza lineare tra frequenza e numero armonico, in accordo con la relazione teorica
+\begin{equation}
+  f_n = \frac{nv}{2L} = \frac{n}{2L} \sqrt{\frac{\tau}{\mu}}
+  \label{eq:frequenze}
+\end{equation}
+
+Il coefficiente angolare interpolato è $k_{misurato} = \qty{17.27 \pm 0.09}{Hz}$, mentre quello ricavato dalla relazione 1 è $k_{teorico} = \qty{19.0 \pm 1.0}{Hz}$. Tramite un t-test  è  stata verificata la compatibilità di questi due valori, ottenendo una probabilità di accordo del 12.9\%, che corrisponde a un valore di $t_0 = 1.52$ ottenuto secondo la relazione
+
+\begin{equation}
+t_0 = \frac{\abs{x_1-x_2}}{\sqrt{{\sigma}_{x_1}^2+{\sigma}_{x_2}^2}}
+\label{eq:t_test}
+\end{equation}
+
+ A partire da $k_{misurato}$, tramite la relazione \eqref{eq:frequenze}, si ottiene $v = \qty{22.7 \pm 0.5}{m/s}$. Tale valore si può confrontare con la velocità di propagazione teorica $v_{teorica} = \qty{24.7 \pm 1.2}{m/s}$, prevista dalla relazione:
+
+\begin{equation}
+  v = \sqrt{\frac{\tau}{\mu}} 
+  \label{eq:velocità-propagazione}
+\end{equation}
+
+dove $\tau = mg$ rappresenta la tensione applicata alla corda e $\mu$ la massa lineare della stessa. Il t-test restituisce $t_0 = 1.54$, che indica una compatibilità del 12.4\% tra il valore osservato e quello atteso.

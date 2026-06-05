@@ -1,0 +1,89 @@
+\section{Dipendenza della frequenza dalla massa lineare}
+
+Nell’ultima parte dell’esperienza è stata studiata la dipendenza della frequenza di risonanza dalla massa lineare della corda.  
+Per fare ciò sono state utilizzate corde differenti, caratterizzate da diversa massa e lunghezza, mantenendo costante la tensione applicata e fissando la lunghezza del tratto vibrante.
+
+La massa totale applicata al sistema è stata mantenuta pari a:
+
+\[
+m = 0.28036\ \text{kg}
+\]
+
+mentre la lunghezza del tratto vibrante è stata fissata a:
+
+\[
+L = (0.697 \pm 0.020)\ \text{m}
+\]
+
+Le frequenze sono state misurate utilizzando sempre la stessa armonica e con un’incertezza strumentale pari a:
+
+\[
+\sigma_f = 0.5\ \text{Hz}
+\]
+
+Per ciascuna corda è stata calcolata la massa lineare secondo la relazione:
+
+\[
+\mu = \frac{m}{L}
+\]
+
+Le misure ottenute sono riportate nella seguente tabella:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ccc}
+\hline
+Corda & Massa lineare $\mu$ [kg/m] & Frequenza $f$ [Hz] \\
+\hline
+Verde fluo & 0.002281 & 52.0 \\
+Gialla e nera & 0.002368 & 51.0 \\
+Nera & 0.002020 & 55.0 \\
+Rossa & 0.002099 & 54.0 \\
+\hline
+\end{tabular}
+\caption{Frequenze misurate per corde con diversa massa lineare.}
+\end{table}
+
+Dal modello teorico delle onde stazionarie su una corda tesa si prevede che la frequenza dipenda inversamente dalla radice quadrata della massa lineare:
+
+\[
+f \propto \frac{1}{\sqrt{\mu}}
+\]
+
+Per verificare tale relazione è stato costruito il grafico della frequenza in funzione di:
+
+\[
+\sqrt{\mu_n}
+\]
+
+ed è stata effettuata un’interpolazione lineare tramite il metodo dei minimi quadrati.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Immagini/ML.png}
+    \caption{Dipendenza della frequenza dalla radice quadrata della massa lineare della corda.}
+\end{figure}
+Il grafico mostra una compatibilità qualitativa con l’andamento teorico previsto. Le deviazioni osservate possono essere attribuite alle limitate differenze tra le masse lineari delle corde utilizzate, oltre che alle incertezze sperimentali sulla misura della frequenza, della lunghezza e della massa delle corde.
+
+L'interpolazione lineare ha fornito:
+
+\[
+k_{\rm exp}=(2.478\pm0.012)
+\]
+
+mentre il valore teorico atteso risulta:
+
+\[
+k_{\rm teo}=(2.379\pm0.051)
+\]
+
+Il test di compatibilità tra i due valori fornisce
+
+\[
+|t|=1.88
+\]
+
+corrispondente a un p-value di circa il 6\%.
+
+I due risultati risultano quindi compatibili entro il livello di significatività adottato, pur mostrando una lieve tensione statistica.
+
