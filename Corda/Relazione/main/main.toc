@@ -6,3 +6,4 @@
 \contentsline {section}{\numberline {4}Dipendenza della frequenza dalla lunghezza del tratto di corda teso}{7}{section.4}%
 \contentsline {section}{\numberline {5}Dipendenza della frequenza dalla massa lineare}{9}{section.5}%
 \contentsline {section}{\numberline {6}Osservazioni}{11}{section.6}%
+\contentsline {section}{Riferimenti bibliografici}{12}{section*.10}%
