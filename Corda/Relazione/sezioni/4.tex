@@ -1,35 +1,14 @@
-\section{Dipendenza della frequenza dalla lunghezza del tratto di corda teso}
+\section{Dipendenza della frequenza dalla lunghezza della corda}
 
-Nella terza parte dell’esperienza è stata studiata la dipendenza della frequenza di risonanza dalla lunghezza del tratto vibrante della corda.  
-La tensione è stata mantenuta costante utilizzando una massa totale pari a $m = 0.28036\ \text{kg}$,
-mentre è stata variata la lunghezza del tratto vibrante della corda.  
-Le misure di frequenza sono state effettuate mantenendo fissata la stessa armonica e considerando un’incertezza strumentale pari a $\sigma_f = \qty{0.5}{Hz}$
-
-Le lunghezze sono state misurate con un’incertezza:
-
-\[
-\sigma_L = 0.015\ \text{m}
-\]
-
-La massa della corda è risultata:
-
-\[
-m_{\text{corda}} = (5.22 \pm 0.05)\times10^{-3}\ \text{kg}
-\]
-
-mentre la massa lineare vale:
-
-\[
-\mu = 0.00210\ \text{kg/m}
-\]
-
-Le frequenze misurate al variare della lunghezza della corda sono riportate nella seguente tabella:
+Nella terza parte dell'esperienza è stata studiata la proporzionalità inversa tra la frequenza di risonanza e la lunghezza del tratto vibrante della corda.  
+Le misure, relative alla seconda armonica, sono state effettuate mantenendo costante la tensione, tramite una massa pari a $m = \qty{280.4 \pm 0.5}{g}$, e variando la lunghezza del tratto vibrante della corda. 
+I dati raccolti sono riportati nella Tabella 3.
 
 \begin{table}[H]
 \centering
 \begin{tabular}{ccc}
 \hline
-Lunghezza $L$ [m] & Frequenza $f$ [Hz] & Incertezza [Hz] \\
+$L$ (m) &  $f$ (Hz) & $\sigma_f$ (Hz) \\
 \hline
 0.657 & 57.0 & 0.5 \\
 0.822 & 46.0 & 0.5 \\
@@ -42,30 +21,16 @@ Lunghezza $L$ [m] & Frequenza $f$ [Hz] & Incertezza [Hz] \\
 \caption{Frequenze misurate al variare della lunghezza del tratto vibrante della corda.}
 \end{table}
 
-Dal modello teorico delle onde stazionarie si prevede una dipendenza inversamente proporzionale tra frequenza e lunghezza della corda:
-
-\[
-f \propto \frac{1}{L}
-\]
-
-Per verificare tale relazione è stato costruito il grafico della frequenza in funzione dell’inverso della lunghezza armonica $\frac{1}{L_H}$ ed è stata effettuata un’interpolazione lineare tramite il metodo dei minimi quadrati.
+Si prosegue interpolando linearmente le frequenze in funzione dell'inverso della lunghezza del tratto vibrante, come mostrato in Figura 3.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{Immagini/L.png}
-    \caption{Andamento della frequenza in funzione dell’inverso della lunghezza del tratto vibrante della corda.}
+    \includegraphics[width=0.6\textwidth]{Immagini/L.png}
+    \caption{Interpolazionedella frequenza in funzione dell’inverso della lunghezza del tratto vibrante della corda, assumendo il passaggio per l'origine.}
 \end{figure}
-Il grafico mostra un andamento compatibile con la linearità prevista teoricamente. Le piccole deviazioni dalla retta interpolante possono essere attribuite alle incertezze sperimentali sulla misura della lunghezza del tratto vibrante, agli effetti dissipativi e alla non perfetta rigidità dei vincoli della corda.
 
-Dalla pendenza della retta interpolante è possibile ricavare una stima della velocità di propagazione delle onde sulla corda e confrontarla con il valore teorico previsto dalla relazione:
+Il test del $\chi^2$ mostra un buon accordo con il modello teorico, infatti restituisce un $\Tilde{\chi}_o^2=0.61$, che per cinque gradi di libertà corrisponde ad una probabilità del 69.4\%.
+Dalla relazione \eqref{eq:frequenze}, avendo che $n = 2$, segue che il coefficiente angolare interpolato sia direttamente la velocità di propagazione delle onde sulla corda. I valori ottenuti sono:
+$v_{misurato} = \qty{37.61 \pm 0.13}{m/s}$, mentre quello ricavato dalla relazione \eqref{eq:v-propagazione} è $v_{teorico} = \qty{36.2 \pm 1.7}{m/s}$. I due valori risultano compatibili, infatti tramite la relazione \eqref{eq:t_test} si è ottenuto $t_0 = 0.81$, che corrisponde a una probabilità di accordo del 41.8\%.
 
-\[
-v = \sqrt{\frac{\tau}{\mu}}
-\]
-
-dove $\tau$ rappresenta la tensione applicata alla corda e $\mu$ la massa lineare della stessa.
-
-Otteniamo dunque un valore del chi quadro ridotto di
-$\Tilde{\chi_o^2}=0.608$
-
-Corrisponde a un p-value di: 0.694
+Si può inoltre confrontare questo valore di velocità con quello ottenuto nella sezione precedente, che è $v_{misurato} = \qty{22.7 \pm 0.5}{m/s}$: la differenza tra i due valori è dovuta al fatto che in questa sezione è stata utilizzata una massa maggiore per mantenere costante la tensione, e di conseguenza la velocità di propagazione delle onde sulla corda è aumentata.
