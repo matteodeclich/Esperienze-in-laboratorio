@@ -12,7 +12,7 @@ Sono state ricercate sperimentalmente le condizioni di risonanza corrispondenti 
 \centering
 \begin{tabular}{ccc}
 \hline
-$\mathbf{n}$ & \ $\mathbf{f_n}$ (\unit{Hz}) & $\mathbf{\sigma_f}$ (\unit{Hz})\\
+\textbf{Ordine armonico} & \ \textbf{Frequenza} (\unit{Hz}) & \textbf{Incertezza} (\unit{Hz})\\
 \hline
 1 & 16.0 & 0.5\\
 2 & 32.5 & 0.5\\
@@ -22,11 +22,10 @@ $\mathbf{n}$ & \ $\mathbf{f_n}$ (\unit{Hz}) & $\mathbf{\sigma_f}$ (\unit{Hz})\\
 \end{tabular}
 \caption{Frequenze e incertezze al variare di n, numero di armonica.}
 \end{table}
-\newpage
 I dati sono stati interpolati linearmente con un fit passante per l'origine, riportato in Figura 1.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{Immagini/n.png}
+    \includegraphics[width=0.6\textwidth]{Immagini/n.png}
     \caption{Interpolazione della frequenza in funzione del numero armonico con un parametro libero.}
 \end{figure}
 
@@ -43,7 +42,7 @@ t_0 = \frac{\abs{x_1-x_2}}{\sqrt{{\sigma}_{x_1}^2+{\sigma}_{x_2}^2}}
 \label{eq:t_test}
 \end{equation}
 
- A partire da $k_{misurato}$, tramite la relazione \eqref{eq:frequenze}, si ottiene $v = \qty{22.7 \pm 0.5}{m/s}$. Tale valore si può confrontare con la velocità di propagazione teorica $v_{teorica} = \qty{24.7 \pm 1.2}{m/s}$, prevista dalla relazione:
+ A partire da $k_{misurato}$, tramite la relazione \eqref{eq:frequenze}, si ottiene $v = \qty{22.7 \pm 0.5}{m/s}$. Tale valore si può confrontare con la velocità di propagazione teorica $v_{teorica} = \qty{24.7 \pm 1.2}{m/s}$, prevista dalla relazione
 
 \begin{equation}
   v = \sqrt{\frac{\tau}{\mu}} 
