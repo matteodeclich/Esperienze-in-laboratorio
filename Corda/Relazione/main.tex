@@ -13,12 +13,6 @@
 \usepackage{braket, dsfont, bbold}
 \usepackage{cancel, MnSymbol}
 \usepackage{derivative}
-\usepackage{siunitx}
-\sisetup{
-  detect-all,
-  separate-uncertainty = true,
-  group-digits = false
-}
 % --- Grafica e Tabelle ---
 \usepackage{graphicx}
 \usepackage{float}
@@ -38,6 +32,12 @@
 \usepackage{isotope}
 \usepackage[version=4]{mhchem}
 \usepackage{siunitx}
+\sisetup{
+  detect-all,
+  separate-uncertainty = true,
+  group-digits = false,
+  inter-unit-product = \
+}
 
 % --- Bibliografia e Layout ---
 \usepackage[backend=bibtex]{biblatex}
@@ -62,7 +62,7 @@
     linkcolor=black,
     hidelinks
 }
-
+\usepackage[italian]{cleveref}
 % --- Configurazioni Personalizzate ---
 \pagestyle{fancy}
 \rhead{}
