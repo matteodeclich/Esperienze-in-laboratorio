@@ -1,6 +1,12 @@
 \section{Obiettivi e apparato sperimentale}
-In questo esperimento si vuole verificare la legge di Coulomb, analizzando la
-dipendenza della forza elettrostatica dalla distanza e dalla carica mediante una bilancia di torsione. Una volta misurata la costante di torsione del filo, sfruttando la legge del momento torcente, sarà possibile ottenere la costante dielettrica $\varepsilon_{0}$ del vuoto e confrontarla col valore atteso di $8.85\cdot10^{-12}$ $\text{C}^2/\text{Nm}^2$.
+In questo esperimento si vuole verificare la legge di Coulomb, analizzando la dipendenza della forza elettrostatica dalla distanza e dalla carica elettrica mediante una bilancia di torsione, secondo la seguente relazione:
+
+\begin{equation}
+    F_C = \frac{1}{4\pi \varepsilon_0 \varepsilon_r} \cdot \frac{q_1 q_2}{r^2}
+    \label{Coulomb}
+\end{equation}
+
+Una volta misurata la costante di torsione del filo, sfruttando la legge del momento torcente, sarà possibile ottenere la costante dielettrica $\varepsilon_{0}$ del vuoto e confrontarla col valore atteso di $8.85\cdot10^{-12}$ $\text{C}^2/\text{Nm}^2$.
 
 \begin{figure}[H]
     \centering
@@ -11,14 +17,20 @@ dipendenza della forza elettrostatica dalla distanza e dalla carica mediante una
 
 Come mostrato in Figura 1, una sfera leggera, ricoperta di vernice conduttiva, è sostenuta da un braccio rigidamente collegato ad un equipaggio mobile, contrappesato, ancorato a sua volta ad un sottile filo di torsione. La sfera può ruotare torcendo il filo. Una sfera identica è montata su un supporto a slitta, in modo che si possa posizionare a diverse distanze rispetto la prima.
 Per eseguire gli esperimenti, si caricano entrambe le sfere con carica dello stesso segno: la forza
-elettrostatica fra le due sfere causa l’allontanamento della sfera mobile che, essendo
-vincolata al filo, si allontana ruotando di un certo angolo: ruotando la testa di sospensione del filo in senso contrario, si riporta l’equipaggio mobile nella posizione di equilibrio iniziale e si misura l'angolo di torsione.
+elettrostatica fra le due sfere causa l'allontanamento della sfera mobile che, essendo
+vincolata al filo, si allontana ruotando di un certo angolo: ruotando la testa di sospensione del filo in senso contrario, si riporta l'equipaggio mobile nella posizione di equilibrio iniziale e si misura l'angolo di torsione. All'equilibrio, il momento della forza elettrostatica è uguale al momento elastico sviluppato dal filo, ne segue:
+
+\begin{equation}
+    \tau_{Coulomb} = F_C \cdot b = C_{\text{tor}} \cdot \theta = \tau_{tor}
+    \label{eq:Momento}
+\end{equation}
+    
 \newpage
 
 \section{Dipendenza di \boldmath $F_C$ dalla distanza}
-Si vuole verificare la dipendenza della forza di Coulomb dall’inverso del quadrato della distanza tra le cariche e, dal momento che nella bilancia di torsione l’angolo di torsione risulta direttamente proporzionale alla forza applicata, si può studiare la dipendenza dell’angolo di torsione $\theta$ dalla distanza r tra i centri delle sfere.
+Si vuole verificare la dipendenza della forza di Coulomb dall'inverso del quadrato della distanza tra le cariche: dalle relazioni \eqref{Coulomb} e \eqref{eq:Momento} segue che l'angolo di torsione $\theta$ risulta direttamente proporzionale alla forza applicata, ergo si può studiare la sua dipendenza dalla distanza r tra i centri delle sfere.
 
-Si allontanano le due sfere alla massima distanza possibile, assumendo per ciascuna un diametro d = $(3.9 \pm 0.1)$ cm, e si caricano entrambe ad un potenziale di 6 kV tramite una sonda di carica. Si procede portando la sfera mobile alla prima distanza selezionata: la forza repulsiva agente fra le due sfere farà ruotare l’equipaggio mobile appeso al filo di torsione. Si prosegue ruotando in verso opposto la manopola di azzeramento della torsione del filo, fino a far coincidere lo zero dell’equipaggio mobile con quello fisso. Si ripete il procedimento per diversi valori di r, raccogliendo diversi valori di $\theta$: le misure effettuate sono riportati in Tabella 1. 
+Si allontanano le due sfere alla massima distanza possibile e si caricano entrambe ad un potenziale di 6 kV tramite una sonda di carica. Il diametro delle sfere, d = $(3.9 \pm 0.1)$ cm, è stato misurato mediante calibro. Si procede portando la sfera mobile alla prima distanza selezionata: la forza repulsiva agente fra le due sfere farà ruotare l'equipaggio mobile appeso al filo di torsione. Si prosegue ruotando in verso opposto la manopola di azzeramento della torsione del filo, fino a far coincidere lo zero dell'equipaggio mobile con quello fisso. Si ripete il procedimento per valori  crescenti di r, raccogliendo i valori di $\theta$: le misure effettuate sono riportati in Tabella 1. 
 
 \begin{table}[H]
 \centering
@@ -39,23 +51,21 @@ Si allontanano le due sfere alla massima distanza possibile, assumendo per ciasc
 {\textbf{\boldmath$\bar{\sigma}_{\theta}$}} & {(\text{rad})}    & 0.02  & 0.02 & 0.02 & 0.02 & 0.02 \\
 \bottomrule
 \end{tabular}
-\caption{Angoli di torsione e loro incertezza, errore standard della media in funzione della distanza r tra i centri delle sfere.}
+\caption{Angoli di torsione e loro valore medio, incertezza ed errore standard della media in funzione di r, distanza tra i centri delle sfere.}
 \label{tab:distanza}
 \end{table}
 
-Le cariche sono libere di muoversi sulla superficie della sfera e, in assenza di forze elettrostatiche esterne, la loro distribuzione è uniforme sull'intera superficie: in queste condizioni, la sfera conduttrice carica si può approssimare ad una carica puntiforme posta nel centro della sfera. Tuttavia, quando le due sfere cariche sono vicine, le cariche mobili si
-ridistribuiscono in modo da rendre minima l’energia elettrostatica, posizionandosi il più lontano possibile da quelle della sfera opposta. 
-La distanza reale tra le cariche è quindi maggiore di quella tra i centri delle sfere, dunque la forza di Coulomb risulta minore. Questo effetto è particolarmente significativo quando la distanza tra le sfere è confrontabile con il loro raggio e dunque per tali valori la dipendenza lineare non è ben verificata.
+Le cariche sono libere di muoversi sulla superficie della sfera e, in assenza di forze elettrostatiche esterne, la loro distribuzione è uniforme sull'intera superficie: in queste condizioni, la sfera conduttrice carica si può approssimare ad una carica puntiforme posta nel centro della sfera. Tuttavia, quando le due sfere cariche sono vicine, le cariche mobili si ridistribuiscono in modo da rendere minima l'energia elettrostatica, posizionandosi il più lontano possibile da quelle della sfera opposta. 
+La distanza reale tra le cariche è quindi maggiore di quella tra i centri delle sfere, dunque la forza di Coulomb diminuisce. Questo effetto è particolarmente significativo quando la distanza tra le sfere è confrontabile con il loro raggio e dunque per tali valori la dipendenza lineare non è ben verificata.
 \newpage
-Si corregge la relazione tra l’angolo $\theta$ e la distanza moltiplicando il valore dell’angolo per un fattore 1/B, con:
+Si corregge la relazione tra l'angolo $\theta$ e la distanza moltiplicando il valore dell'angolo per un fattore 1/B, con:
 
 \begin{equation}
     B(r)=1-\frac{4a^3}{r^3}
     \label{1}
 \end{equation}
 
-dove $a$ è il raggio delle sfere.
-Si procede con l'interpolazione dei valori di $\theta$ corretti in funzione di $1/r^2$ determinando la miglior retta che descrive la relazione, come mostrato in Figura 2.
+dove $a$ è il raggio delle sfere ed $r$ è la distanza tra i loro centri. Si procede con l'interpolazione dei valori di $\theta$ corretti in funzione di $1/r^2$ determinando la miglior retta che descrive la relazione, come mostrato in Figura 2.
 
 \begin{figure}[H]
     \centering
@@ -68,11 +78,11 @@ Il coefficiente angolare della retta interpolata è $k_1=(17.5 \pm 0.1) \cdot10^
 
 \section{Dipendenza di \boldmath $F_C$ dalla carica}
 \subsection{Potenziale Uguale}
-Per determinare la dipendenza della forza di Coulomb dalla carica è necessario eseguire misure in modo analogo a quelle precedenti, mantenendo però fissa la distanza tra le due sfere: le misure sono state effettuate assumendo una distanza di $(12.0 \pm 0.1)$ cm. 
-A piccole distanze la capacità delle sfere è circa costante, ed essendo la carica direttamente proporzionale al potenziale, secondo la relazione $q = C\cdot V$, dove $C=4\pi \varepsilon_{0} a$ è la capacità di una sfera isolata, è sufficiente studiare la dipendenza della forza dal potenziale.
+Per determinare la dipendenza della forza di Coulomb dalla carica è necessario eseguire misure nelle stesse modalità precedenti, mantenendo però fissa la distanza tra le due sfere: le misure sono state effettuate assumendo una distanza di $(12.0 \pm 0.1)$ cm. 
+A piccole distanze la capacità delle sfere è circa costante, ed essendo la carica direttamente proporzionale al potenziale, secondo la relazione $q = C\cdot V$, dove $C=4\pi \varepsilon_{0} a$ è la capacità di una sfera isolata, è sufficiente studiare, tramite le relazioni \eqref{Coulomb} e \eqref{eq:Momento}, la dipendenza della forza dal potenziale.
 \newpage
 
-Si caricano, dunque, le sfere allo stesso potenziale, in valori crescenti fino a 6 kV. Le misure sono state raccolte in tabella 2.
+Si caricano le sfere allo stesso potenziale, in valori crescenti fino a 6 kV. Per gli angoli è stato assunto un errore di 4°, dovuto ad una combinazione di errori sistematici di azzeramento della strumentazione, di sensibilità ed oscillazioni residue. Le misure sono state raccolte in tabella 2.
 
 \begin{table}[H]
 \centering
@@ -105,11 +115,11 @@ Si interpolano linearmente gli angoli di torsione in funzione del potenziale $V^
     \label{fig:PotUguale}
 \end{figure}
 
-Il coefficiente angolare della retta interpolata è $k_2=(35 \pm 1)\: \text{nV}^{2}$. Il $\chi^2$ della retta è $\tilde{\chi_o}^2= 0.25$, che per 8 gradi di libertà corrisponde ad una probabilità di accordo con i dati del $98\%$.
+Il coefficiente angolare della retta interpolata è $k_2=(35 \pm 1)\: \text{nV}^{2}$. Il test di adattamento del $\chi^2$ restituisce un $\tilde{\chi_o}^2= 0.25$, che per 8 gradi di libertà corrisponde ad una probabilità di accordo con i dati del $98\%$.
 \newpage
 
 \subsection{Potenziale Diverso}
-Si ripetono le misure mantenendo costante il potenziale su una sfera, valore che in questo caso è stato assunto essere 6 kV, variandolo solo sull’altra. In Tabella 3 sono riportati i valori misurati.
+Si ripetono le misure mantenendo costante il potenziale su una sfera e variandolo sull'altra. È stato considerato un potenziale fisso pari a 6 kV, mentre gli errori sono stati stimati come in Tabella 2. In Tabella 3 sono riportati i valori misurati.
 
 \begin{table}[H]
 \centering
@@ -134,7 +144,7 @@ Si ripetono le misure mantenendo costante il potenziale su una sfera, valore che
 \label{tab:potenziali_diversi}
 \end{table}
 
-Si procede con l'interpolazione lineare degli angoli di torsione in funzione del potenziale variabile, assumendo un parametro libero come mostrato in Figura 4.
+Si procede ad interpolare gli angoli di torsione in funzione del potenziale variabile, ricordandosi la correzione 1/B, assumendo un parametro libero come mostrato in Figura 4.
 
 \begin{figure}[H]
     \centering
@@ -147,10 +157,8 @@ La retta ha coefficiente angolare $k_3=(220 \pm 6)$ $\mu \text{V}$. Il test del 
 
 \section{Misura della costante di torsione del filo}
 Per determinare la costante $C_{\text{tor}}/b$ si deve calibrare la bilancia di torsione utilizzando una forza nota che agisca sulla sfera mobile al posto della forza di Coulomb: si utilizza la forza di gravità. Si colloca la bilancia sul fianco e si posiziona un tubo di supporto sotto la sfera, per sostenerla fino a calibrazione ultimata ed evitare torsioni eccessive del filo.
-Si azzera la bilancia, ruotando la manopola di regolazione della torsione, fino a portare
-l’indice inciso sul contrappeso a paletta in corrispondenza di quello inciso sul braccio
-fisso: all’equilibrio, la bacchetta di sostegno della sfera mobile deve risultare perfettamente orizzontale.\\
-Si prosegue appoggiando cautamente una massa da 20 mg sulla sfera mobile, per poi regolare la manopola della torsione fino a riportare la sfera nella posizione di equilibrio di partenza. L'operazione va ripetuta con masse di valore crescente: le misure sono riportate in Tabella 4.
+Si azzera la bilancia, ruotando la manopola di regolazione della torsione, fino a portare l'indice inciso sul contrappeso a paletta in corrispondenza di quello segnato sul braccio fisso: all'equilibrio, la bacchetta di sostegno della sfera mobile deve risultare perfettamente orizzontale.
+Si prosegue appoggiando cautamente masse di valore crescente sulla sfera mobile, per poi regolare la manopola della torsione fino a riportare la sfera nella posizione di equilibrio di partenza. L'incertezza sugli angoli è stata stimata come nelle sezioni precedenti: le misure sono riportate in Tabella 4.
 
 \begin{table}[H]
 \centering
@@ -182,21 +190,21 @@ Una volta definito  $K_{\text{tor}} = C_{\text{tor}}/b$, si ottiene $m\cdot g = 
 Dividendo $g$ per il coefficiente angolare interpolato si ottiene $K_{\text{tor}} = (78.8 \pm 0.3)$ $\mu\text{N}$. Il test del $\chi^2$ per il modello lineare restituisce $\tilde{\chi_o}^2= 1.06$, che per 4 gradi di libertà indica una probabilità di accordo con i dati del $38\%$.
 
 \section{Misura della costante dielettrica del vuoto}
-Noto il valore di $K_{\text{tor}}$, è possibile ricavare la costante dielettrica del vuoto $\varepsilon_0$, avendo approssimato $\varepsilon_r=1$ la costante dielettrica relativa dell’aria. Infatti il valore della forza di Coulomb, dato dalla relazione $F_C = K_{\text{tor}}\cdot \theta$, si può eguagliare a:
+Noto il valore di $K_{\text{tor}}$, è possibile ricavare la costante dielettrica del vuoto $\varepsilon_0$, avendo approssimato $\varepsilon_r=1$ la costante dielettrica relativa dell’aria. Infatti, manipolando le equazioni \eqref{Coulomb} e \eqref{eq:Momento}, oltre alle dipendenze studiate nelle sezioni precedenti, si ottiene la seguente relazione:
 
 \begin{equation}
-    F_C = \frac{4\pi \varepsilon_0 a^2V_1V_2}{r^2}
+    F_C = \frac{4\pi \varepsilon_0 a^2V_1V_2}{r^2} = K_{\text{tor}} \cdot \theta
 \end{equation}
 
 Dunque, a partire dai coefficienti angolari precedentemente interpolati, si calcolano i valori di $\varepsilon_0$ e se ne fa una media pesata da cui si ottiene $\bar{\varepsilon}_{0} = (8.35 \pm 0.51)\cdot10^{-12}$ $\text{C}^2/\text{Nm}^2$.
 
 \section{Conclusioni}
-L'esperienza ha permesso di effettuare tre misure indipendenti della costante dielettrica del vuoto tramite la legge di Coulomb e quella del momento di torsione.
-La media pesata $\bar{\varepsilon}_{0}$ delle tre misure risulta compatibile col valore previsto $\varepsilon_0 = 8.85\cdot10^{-12}$ $\text{C}^2/\text{Nm}^2$ con una probabilità del $33\%$, corrispondente al valore calcolato di:
+L'esperienza ha permesso di effettuare tre misure indipendenti della costante dielettrica del vuoto tramite la legge di Coulomb e quella del momento di torsione, adoperata inoltre per misurare la costante di torsione del filo.
+La media pesata $\bar{\varepsilon}_{0}$ delle tre misure risulta compatibile col valore previsto $\varepsilon_0 = 8.85\cdot10^{-12}$ $\text{C}^2/\text{Nm}^2$ con una probabilità del $33\%$, corrispondente a:
 
 \begin{equation}
     t_0=\frac{\abs{\varepsilon_0-\bar{\varepsilon}_{0}}}{\sigma_{\bar{\varepsilon}_{0}}}=0.97
 \end{equation}
 
-e, infatti, il valore di $\varepsilon_0$ è entro 1$\sigma$ da quello misurato.
+e, infatti, il valore atteso di $\varepsilon_0$ è entro 1$\sigma_{\bar{\varepsilon}_{0}}$ da quello misurato.
 \newpage
