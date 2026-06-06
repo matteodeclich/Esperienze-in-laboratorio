@@ -1,89 +1,32 @@
 \section{Dipendenza della frequenza dalla massa lineare}
 
-Nell’ultima parte dell’esperienza è stata studiata la dipendenza della frequenza di risonanza dalla massa lineare della corda.  
-Per fare ciò sono state utilizzate corde differenti, caratterizzate da diversa massa e lunghezza, mantenendo costante la tensione applicata e fissando la lunghezza del tratto vibrante.
-
-La massa totale applicata al sistema è stata mantenuta pari a:
-
-\[
-m = 0.28036\ \text{kg}
-\]
-
-mentre la lunghezza del tratto vibrante è stata fissata a:
-
-\[
-L = (0.697 \pm 0.020)\ \text{m}
-\]
-
-Le frequenze sono state misurate utilizzando sempre la stessa armonica e con un’incertezza strumentale pari a:
-
-\[
-\sigma_f = 0.5\ \text{Hz}
-\]
-
-Per ciascuna corda è stata calcolata la massa lineare secondo la relazione:
-
-\[
-\mu = \frac{m}{L}
-\]
-
-Le misure ottenute sono riportate nella seguente tabella:
+In quest'ultima sezione è stata analizzata la proporzionalità inversa della frequenza di risonanza dalla radice quadrata della massa lineare della corda.  
+Sono state utilizzate quattro corde differenti, mantenendo costante la tensione e fissando la lunghezza del tratto vibrante: anche in questo caso si è studiata la seconda armonica.
+I valori misurati di massa e lunghezza sono: $m = \qty{280.4 \pm 0.5}{g}$ e $L = \qty{0.697 \pm 0.015}{m}$. 
+Le misure sono riportate nella Tabella 4.
 
 \begin{table}[H]
 \centering
-\begin{tabular}{ccc}
+\begin{tabular}{cccc}
 \hline
-Corda & Massa lineare $\mu$ [kg/m] & Frequenza $f$ [Hz] \\
+Corda & $\mu$ (kg/m) & $f_2$ (Hz) & $\sigma_{f_2}$ (Hz) \\
 \hline
-Verde fluo & 0.002281 & 52.0 \\
-Gialla e nera & 0.002368 & 51.0 \\
-Nera & 0.002020 & 55.0 \\
-Rossa & 0.002099 & 54.0 \\
+Verde fluo & 0.002281 & 52.0 & 0.5 \\
+Gialla e nera & 0.002368 & 51.0 & 0.5 \\
+Nera & 0.002020 & 55.0 & 0.5 \\
+Rossa & 0.002099 & 54.0 & 0.5 \\
 \hline
 \end{tabular}
-\caption{Frequenze misurate per corde con diversa massa lineare.}
+\caption{Masse lineari, frequenze e incertezze.}
 \end{table}
 
-Dal modello teorico delle onde stazionarie su una corda tesa si prevede che la frequenza dipenda inversamente dalla radice quadrata della massa lineare:
-
-\[
-f \propto \frac{1}{\sqrt{\mu}}
-\]
-
-Per verificare tale relazione è stato costruito il grafico della frequenza in funzione di:
-
-\[
-\sqrt{\mu_n}
-\]
-
-ed è stata effettuata un’interpolazione lineare tramite il metodo dei minimi quadrati.
+Avvalendosi di \eqref{eq:frequenze}, si interpolano linearmente i dati come mostrato in Figura 4.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{Immagini/ML.png}
-    \caption{Dipendenza della frequenza dalla radice quadrata della massa lineare della corda.}
+    \includegraphics[width=0.6\textwidth]{Immagini/ML.png}
+    \caption{Dipendenza della frequenza dalla radice quadrata della massa lineare di corde differenti.}
 \end{figure}
-Il grafico mostra una compatibilità qualitativa con l’andamento teorico previsto. Le deviazioni osservate possono essere attribuite alle limitate differenze tra le masse lineari delle corde utilizzate, oltre che alle incertezze sperimentali sulla misura della frequenza, della lunghezza e della massa delle corde.
 
-L'interpolazione lineare ha fornito:
-
-\[
-k_{\rm exp}=(2.478\pm0.012)
-\]
-
-mentre il valore teorico atteso risulta:
-
-\[
-k_{\rm teo}=(2.379\pm0.051)
-\]
-
-Il test di compatibilità tra i due valori fornisce
-
-\[
-|t|=1.88
-\]
-
-corrispondente a un p-value di circa il 6\%.
-
-I due risultati risultano quindi compatibili entro il livello di significatività adottato, pur mostrando una lieve tensione statistica.
-
+Il test del $\chi^2$ evidenzia un ottimo accordo con il modello teorico: restituisce un $\Tilde{\chi}_o^2=0.06$, che per tre gradi di libertà restituisce una probabilità di accordo del 98.1\%.
+Il coefficiente angolare interpolato è $k_{misurato} = \qty{2.48 \pm 0.01}{\hertz.kg^{\frac{1}{2}}.m^{-\frac{1}{2}}}$, mentre quello ricavato dalla relazione \eqref{eq:frequenze} è $k_{teorico} = \qty{2.38 \pm 0.05}{\hertz.kg^{\frac{1}{2}}.m^{-\frac{1}{2}}}$. Tramite la relazione \eqref{eq:t_test} si è ottenuto $t_0 = 1.88$, che corrisponde a una probabilità di accordo del 6.0\%: i valori risultano quindi marginalmente compatibili, ma è importante sottolineare che il coefficiente angolare misurato è comunque in accordo con quello teorico entro un intervallo di confidenza al 95\%.
