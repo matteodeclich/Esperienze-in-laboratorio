@@ -7,6 +7,6 @@
 \contentsline {section}{\numberline {5}Prisma a facce parallele}{7}{section.5}%
 \contentsline {section}{\numberline {6}Legge dei punti coniugati e ingrandimento}{8}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Lente con focale di \qty {250}{mm}}{9}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Lente con focale di \qty {100}{mm}}{10}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.2}Lente con focale di \qty {100}{mm}}{11}{subsection.6.2}%
 \contentsline {section}{\numberline {7}Conclusioni}{12}{section.7}%
 \contentsline {section}{Riferimenti bibliografici}{13}{section*.15}%
