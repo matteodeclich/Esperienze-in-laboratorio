@@ -1,8 +1,8 @@
 \section{Prisma a facce parallele}
-Quando un raggio luminoso attraversa un prisma a facce parallele, subisce due rifrazioni come in figura.
+Quando un raggio luminoso attraversa un prisma a facce parallele, subisce due rifrazioni come in Figura 3.
 \begin{figure}[H]
     \centering
-    \begin{tikzpicture}[scale=1.5]
+    \begin{tikzpicture}[scale=1.25]
         % Definizione delle coordinate (A e B sono la base inferiore)
         \coordinate (A) at (0,0);       % Angolo retto inferiore sinistro
         \coordinate (B) at (0,5);       % Angolo retto inferiore destro
@@ -47,26 +47,28 @@ Si osserva che il raggio uscente dal prisma risulta parallelo al raggio incident
     d = h \sin\theta \left( 1 - \frac{\cos\theta}{\sqrt{n^2 - \operatorname\sin^2\theta}} \right)
 \end{equation}
 Sono state raccolte le misure dello spostamento per diversi angoli di incidenza. Ciascuna è stata confrontata con il valore teorico previsto dalla relazione \eqref{eq:spostamento-facce}, con spessore del prisma trapezoidale $h=(32\pm1)$ mm e indice di rifrazione determinato nelle misure dell'angolo di deviazione minima.
-Si raccolgono i dati nella tabella seguente:\\
+Si raccolgono i dati e le compatibilità nella Tabella 4
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
-\begin{tabular}{ccc}
+\begin{tabular}{cccc}
 \toprule
-\textbf{Angolo} (\unit{\degree}) & \textbf{Distanza dal centro} (\unit{mm}) & \textbf{Distanza attesa} (\unit{mm}) \\
+\textbf{Angolo \small{(\unit{\degree})}} & \textbf{Distanza dal centro \small{(\unit{mm})}} & \textbf{Distanza attesa \small{(\unit{mm})}} & $\mathbf{t_0}$ \\
 \midrule
-10 & \qty{2 \pm 0.5}{}  & \qty{1.97 \pm 0.21}{}  \\
-20 & \qty{4 \pm 0.5}{}  & \qty{4.08 \pm 0.26}{}  \\
-30 & \qty{6 \pm 0.5}{}  & \qty{6.46 \pm 0.32}{}  \\
-40 & \qty{9 \pm 0.5}{}  & \qty{9.27 \pm 0.40}{}  \\
-50 & \qty{12 \pm 0.5}{} & \qty{12.68 \pm 0.50}{} \\
+10 & \qty{2 \pm 1}{}  & \qty{1.97 \pm 0.22}{}  & 0.03 \\
+20 & \qty{4 \pm 1}{}  & \qty{4.08 \pm 0.28}{}  & 0.07 \\
+30 & \qty{6 \pm 1}{}  & \qty{6.46 \pm 0.36}{}  & 0.43 \\
+40 & \qty{9 \pm 1}{}  & \qty{9.27 \pm 0.47}{}  & 0.25 \\
+50 & \qty{12 \pm 1}{} & \qty{12.68 \pm 0.60}{} & 0.58 \\
 \bottomrule
 \end{tabular}
 \caption{Confronto tra le distanze dal centro misurate sperimentalmente e i valori teorici attesi al variare dell'angolo d'incidenza.}
 \label{tab:distanze_angoli}
 \end{table}
 
-Si considera un errore di \qty{0.5}{mm} sulla misura della distanza sperimentale. L'errore sulla distanza attesa è invece dovuto all'incertezza di \ang{1} sulla misura degli angoli di incidenza e all'errore sulla larghezza del prisma. Si osserva una piena compatibilità delle misure entro una deviazione standard.
+Le incertezze sulle misure sono dovute alla sensibilità della carta millimetrata e del goniometro posti sul banco ottico. 
+Si considera quindi un errore di \qty{1}{mm} sulla distanza sperimentale; l'errore sulla distanza attesa è invece ottenuto propagando le incertezze di \ang{1} sulla misura degli angoli di incidenza e di \qty{1}{\milli\meter} sulla larghezza $h$ del prisma. 
+Si osserva una piena compatibilità delle misure entro una deviazione standard.
 
 
 

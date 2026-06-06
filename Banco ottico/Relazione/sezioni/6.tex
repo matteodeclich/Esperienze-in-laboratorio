@@ -31,9 +31,9 @@ La prima lente utilizzata per questa fase dell'esperimento ha focale di \qty{250
 \begin{tabular}{ccccc}
 \toprule
 % Impostiamo multirow su 3 righe fittizie per compensare l'altezza del testo a sinistra
-\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}\textbf{Distanza}\\(\unit{mm})\end{tabular}} & \multicolumn{2}{c}{\textbf{Misura 1}} & \multicolumn{2}{c}{\textbf{Misura 2}} \\
+\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}\textbf{Distanza}\\\textbf{\small{(\unit{mm})}}\end{tabular}} & \multicolumn{2}{c}{\textbf{Misura 1}} & \multicolumn{2}{c}{\textbf{Misura 2}} \\
 \cmidrule(r){2-3} \cmidrule(l){4-5}
- & $p$ (\unit{mm}) & $q$ (\unit{mm}) & $p$ (\unit{mm}) & $q$ (\unit{mm}) \\
+ & $\mathbf{p}$  \textbf{\small{(\unit{mm})}} & $\mathbf{q}$  \textbf{\small{(\unit{mm})}} & $\mathbf{p}$ \textbf{\small{(\unit{mm})}} & $\mathbf{q}$ \textbf{\small{(\unit{mm})}} \\
 \midrule
 1100 & 390 & 710  & 720  & 380 \\
 1200 & 355 & 845  & 850  & 350 \\
@@ -49,9 +49,7 @@ La prima lente utilizzata per questa fase dell'esperimento ha focale di \qty{250
 \end{table}
 
 Alle misure di $p$ e $q$ è stata associata un'incertezza di \qty{1}{cm} dovuta alla difficoltà di trovare visivamente il punto di fuoco dell'immagine. 
-Successivamente sono stati interpolati linearmente con due parametri liberi a e b $\frac{1}{p}$ e $\frac{1}{q}$. Dall'interpolazione, di cui si riporta il grafico qui sotto, si ricava un coefficiente angolare $b = (-1.02 \pm 0.02)$, compatibile con $-1$, 
-come previsto da \eqref{eq:punti-coniugati}, e l'intercetta $a = (4.04 \pm 0.05) \times 10^{-3}$, 
-da cui si ricava $f = \qty{247.5 \pm 3.1}{mm}$.\\
+Successivamente sono stati interpolati linearmente $\frac{1}{p}$ e $\frac{1}{q}$ con due parametri liberi. Si riporta il grafico qui sotto:
 
 \begin{figure}[H]
     \centering
@@ -59,7 +57,7 @@ da cui si ricava $f = \qty{247.5 \pm 3.1}{mm}$.\\
     \caption{Interpolazione lineare tra $\frac{1}{p}$ e $\frac{1}{q}$}
     \label{fig:2}
 \end{figure}
-
+Dall'interpolazione si ricava un coefficiente angolare $b = (-1.02 \pm 0.02)$, compatibile con $-1$, come previsto da \eqref{eq:punti-coniugati}, e l'intercetta $a = \qty{4.04 \pm 0.05 e-3}{\milli\meter\tothe{-1}}$, da cui si ricava $f = \qty{247.5 \pm 3.1}{mm}$.\\
 Il test del $\chi^2$ indica un adattamento del modello lineare del 93.2\%.
 Il t-test restituisce t=0.80, associato a una compatibilità del 42.37\% con la distanza focale indicata sulla lente.
 
@@ -68,22 +66,27 @@ Per quanto riguarda $p$ e $q$, gli errori considerati sono gli stessi del punto 
 
 \begin{table}[htbp]
 \centering
-\begin{tabular}{c|cc|cc}
-\hline
-\hline
-\textbf{Distanza} & \multicolumn{2}{c|}{\textbf{Misura 1}} & \multicolumn{2}{c}{\textbf{Misura 2}} \\
-(\unit{mm}) & $M_{\text{sperimentale}}$ & $M_{\text{teorico}}$ & $M_{\text{sperimentale}}$ & $M_{\text{teorico}}$ \\
-\hline
-1100 & \qty{1.925 \pm 0.025}{} & \qty{1.821 \pm 0.053}{} & \qty{0.550 \pm 0.025}{} & \qty{0.528 \pm 0.016}{} \\
-1200 & \qty{2.500 \pm 0.025}{} & \qty{2.380 \pm 0.073}{} & \qty{0.450 \pm 0.025}{} & \qty{0.412 \pm 0.013}{} \\
-1300 & \qty{2.975 \pm 0.025}{} & \qty{2.824 \pm 0.088}{} & \qty{0.375 \pm 0.025}{} & \qty{0.343 \pm 0.011}{} \\
-1400 & \qty{3.425 \pm 0.025}{} & \qty{3.255 \pm 0.104}{} & \qty{0.325 \pm 0.025}{} & \qty{0.304 \pm 0.010}{} \\
-1500 & \qty{3.875 \pm 0.025}{} & \qty{3.702 \pm 0.120}{} & \qty{0.300 \pm 0.025}{} & \qty{0.265 \pm 0.009}{} \\
-\hline
-\hline
+\begin{tabular}{cccc}
+\toprule
+\textbf{Distanza \small{(\unit{mm})}} & $\bm{M_{\text{sperimentale}}}$ & $\bm{M_{\text{teorico}}}$ & \bm{$t_0$} \\
+\midrule
+1100 & \qty{1.93 \pm 0.05}{} & \qty{1.82 \pm 0.05}{} & 1.37 \\
+1200 & \qty{2.50 \pm 0.07}{} & \qty{2.38 \pm 0.07}{} & 1.21 \\
+1300 & \qty{2.98 \pm 0.08}{} & \qty{2.82 \pm 0.09}{} & 1.28 \\
+1400 & \qty{3.43 \pm 0.09}{} & \qty{3.26 \pm 0.10}{} & 1.24 \\
+1500 & \qty{3.88 \pm 0.10}{} & \qty{3.70 \pm 0.12}{} & 1.10 \\
+\midrule
+\textbf{Distanza \small{(\unit{mm})}} & $\bm{M_{\text{sperimentale}}}$ & $\bm{M_{\text{teorico}}}$ & \bm{$t_0$} \\
+\midrule
+1100 & \qty{0.55 \pm 0.03}{} & \qty{0.53 \pm 0.02}{} & 0.68 \\
+1200 & \qty{0.45 \pm 0.03}{} & \qty{0.41 \pm 0.01}{} & 1.27 \\
+1300 & \qty{0.38 \pm 0.03}{} & \qty{0.34 \pm 0.01}{} & 1.11 \\
+1400 & \qty{0.33 \pm 0.03}{} & \qty{0.30 \pm 0.01}{} & 0.77 \\
+1500 & \qty{0.30 \pm 0.03}{} & \qty{0.26 \pm 0.01}{} & 1.28 \\
+\bottomrule
 \end{tabular}
-\caption{Confronto tra ingrandimento sperimentale e teorico al variare della distanza.}
-\label{tab:confronto_ingrandimenti}
+\caption{Confronto tra ingrandimento sperimentale e teorico per il primo e il secondo set di dati (distanze 1100-1500 mm) con i relativi indici di compatibilità $t_0$.}
+\label{tab:ingrandimenti_1}
 \end{table}
 
 La compatibilità tra i valori sperimentali e quelli teorici è stata verificata tramite il t-test; per ogni coppia di dati si è ottenuto $t<2$, confermando la compatibilità statistica delle misure. È stata infine misurata la distanza minima sperimentale tra schermo e sorgente, pari a \qty{999 \pm 5}{mm}, compatibile con quella \hyperref[distanza-minima]{teorica}, che per la lente usata corrisponde a \qty{1000}{mm}.
@@ -101,9 +104,9 @@ Sono state raccolte le misure di $p$ e $q$ per quattro distanze diverse, riporta
 \begin{tabular}{ccccc}
 \toprule
 % Impostiamo multirow su 2 righe fittizie per compensare l'altezza del testo a sinistra
-\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}\textbf{Distanza}\\(\unit{mm})\end{tabular}} & \multicolumn{2}{c}{\textbf{Misura 1}} & \multicolumn{2}{c}{\textbf{Misura 2}} \\
+\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}\textbf{Distanza}\\\textbf{\small{(\unit{mm})}}\end{tabular}} & \multicolumn{2}{c}{\textbf{Misura 1}} & \multicolumn{2}{c}{\textbf{Misura 2}} \\
 \cmidrule(r){2-3} \cmidrule(l){4-5}
- & $p$ (\unit{mm}) & $q$ (\unit{mm}) & $p$ (\unit{mm}) & $q$ (\unit{mm})\\
+ & $\mathbf{p}$  \textbf{\small{(\unit{mm})}} & $\mathbf{q}$  \textbf{\small{(\unit{mm})}} & $\mathbf{p}$ \textbf{\small{(\unit{mm})}} & $\mathbf{q}$ \textbf{\small{(\unit{mm})}} \\
 \midrule
 600 & 139 & 461 & 467 & 133 \\
 550 & 146 & 404 & 413 & 137 \\
@@ -117,7 +120,7 @@ Sono state raccolte le misure di $p$ e $q$ per quattro distanze diverse, riporta
 \end{center}
 \end{table}
 
-L'interpolazione lineare con due parametri liberi tra $\frac{1}{p}$ e $\frac{1}{q}$ ha restituito un coefficiente angolare $b = (-1.05 \pm 0.05)$, compatibile con $-1$, e un'intercetta $a = (97.1 \pm 0.05) \times 10^{-4}$, da cui si ricava $f=\qty{103.0 \pm 3.5}{mm}$.
+L'interpolazione lineare con due parametri liberi tra $\frac{1}{p}$ e $\frac{1}{q}$ ha restituito un coefficiente angolare $b = (-1.05 \pm 0.05)$, compatibile con $-1$, e un'intercetta $a = \qty{9.71 \pm 0.33 e-3}{\milli\meter\tothe{-1}}$, da cui si ricava $f=\qty{103.0 \pm 3.5}{mm}$.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{immagini/100mm.png}
@@ -126,25 +129,29 @@ L'interpolazione lineare con due parametri liberi tra $\frac{1}{p}$ e $\frac{1}{
 \end{figure}
 Il test del $\chi^2$ indica un adattamento del modello lineare del 99\%.
 Il t-test restituisce t=0.86, associato a una compatibilità del 39.0\% con la distanza focale indicata sulla lente.
-Sono poi stati raccolti i dati sugli ingrandimenti per quattro distanze tra sorgente e schermo, che vengono riportati nella tabella sottostante.\\ 
+Sono poi stati raccolti i dati sugli ingrandimenti per quattro distanze tra sorgente e schermo, che vengono riportati nella Tabella 8.\\ 
 
 \begin{table}[htbp]
 \centering
-\begin{tabular}{c|cc|cc}
-\hline
-\hline
-\textbf{Distanza} & \multicolumn{2}{c|}{\textbf{Misura 1}} & \multicolumn{2}{c}{\textbf{Misura 2}} \\
-(\unit{mm}) & $M_{\text{sperimentale}}$ & $M_{\text{teorico}}$ & $M_{\text{sperimentale}}$ & $M_{\text{teorico}}$ \\
-\hline
-600 & \qty{3.650 \pm 0.095}{} & \qty{3.317 \pm 0.249}{} & \qty{0.325 \pm 0.026}{} & \qty{0.285 \pm 0.022}{} \\
-550 & \qty{3.000 \pm 0.079}{} & \qty{2.767 \pm 0.202}{} & \qty{0.375 \pm 0.027}{} & \qty{0.332 \pm 0.026}{} \\
-500 & \qty{2.450 \pm 0.066}{} & \qty{2.226 \pm 0.157}{} & \qty{0.475 \pm 0.028}{} & \qty{0.408 \pm 0.030}{} \\
-450 & \qty{1.700 \pm 0.049}{} & \qty{1.601 \pm 0.109}{} & \qty{0.650 \pm 0.030}{} & \qty{0.579 \pm 0.041}{} \\
-\hline
-\hline
+\begin{tabular}{cccc}
+\toprule
+\textbf{Distanza \small{(\unit{mm})}} & $\bm{M_{\text{sperimentale}}}$ & $\bm{M_{\text{teorico}}}$ & \bm{$t_0$} \\
+\midrule
+600 & \qty{3.65 \pm 0.10}{} & \qty{3.32 \pm 0.25}{} & 1.25 \\
+550 & \qty{3.00 \pm 0.08}{} & \qty{2.77 \pm 0.20}{} & 1.08 \\
+500 & \qty{2.45 \pm 0.07}{} & \qty{2.23 \pm 0.16}{} & 1.31 \\
+450 & \qty{1.70 \pm 0.05}{} & \qty{1.60 \pm 0.11}{} & 0.83 \\
+\midrule
+\textbf{Distanza \small{(\unit{mm})}} & $\bm{M_{\text{sperimentale}}}$ & $\bm{M_{\text{teorico}}}$ & \bm{$t_0$} \\
+\midrule
+600 & \qty{0.33 \pm 0.03}{} & \qty{0.29 \pm 0.02}{} & 1.17 \\
+550 & \qty{0.38 \pm 0.03}{} & \qty{0.33 \pm 0.03}{} & 1.17 \\
+500 & \qty{0.48 \pm 0.03}{} & \qty{0.41 \pm 0.03}{} & 1.62 \\
+450 & \qty{0.65 \pm 0.03}{} & \qty{0.58 \pm 0.04}{} & 1.41 \\
+\bottomrule
 \end{tabular}
-\caption{Confronto tra ingrandimento sperimentale e teorico al variare della distanza.}
-\label{tab:ingrandimenti-2}
+\caption{Confronto tra ingrandimento sperimentale e teorico per il primo e il secondo set di dati al variare della distanza.}
+\label{tab:ingrandimenti_2}
 \end{table}
 
 Come in precedenza, è stato effettuato un t-test per verificare la compatibilità tra dati sperimentali e teorici, ottenendo per ciascuna coppia di valori $t<2$.\\

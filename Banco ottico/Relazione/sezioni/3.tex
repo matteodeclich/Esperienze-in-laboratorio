@@ -1,5 +1,5 @@
 \section{Legge di Snell e reversibilità del cammino ottico}
-La velocità di propagazione della luce è costante nel vuoto, ma diminuisce se attraversa un mezzo. Ogni materiale è caratterizzato da un indice di rifrazione, sempre maggiore di 1, dato dal rapporto fra velocità della luce nel vuoto e nel mezzo \[n=\frac{c}{v}\] che dipende dalla lunghezza d'onda della luce. Quando un raggio luminoso attraversa la superficie di separazione fra due mezzi diversi, avviene un fenomeno detto rifrazione. La relazione tra l'angolo di incidenza e l'angolo di rifrazione è descritta dalla legge di Snell 
+La velocità di propagazione della luce è costante nel vuoto, ma diminuisce se attraversa un mezzo. Ogni materiale è caratterizzato da un indice di rifrazione, dato dal rapporto fra velocità della luce nel vuoto e nel mezzo \[n=\frac{c}{v}\] Esso è sempre maggiore di 1 e dipende dalla lunghezza d'onda della luce. Quando un raggio luminoso attraversa la superficie di separazione fra due mezzi diversi, avviene un fenomeno detto rifrazione. La relazione tra l'angolo di incidenza e l'angolo di rifrazione è descritta dalla legge di Snell 
 
 \begin{equation}
     n_1 \sin{\theta_{\text{incidente}}} = n_2 \sin{\theta_{\text{rifratto}}}
@@ -52,7 +52,7 @@ Inoltre, la legge di Snell prevede la reversibilità del cammino ottico. Se si f
 Questa prima parte dell'esperimento è stata effettuata utilizzando una lente semicilindrica in plexiglass. Quando un raggio luminoso incide nel centro della faccia piana della lente subisce un'unica rifrazione all'ingresso. Infatti, poiché il raggio interseca la superficie curva lungo la normale nel passaggio dalla lente all'aria, non varia la sua traiettoria in uscita.
 Le misure degli angoli di rifrazione sono state effettuate considerando come errore la precisione del goniometro presente sulla piattaforma, ovvero $\sigma_{\theta}=\ang{1}$. 
 \newpage
-Si riportano qui i dati raccolti in una tabella:\\
+Si riportano i dati raccolti in Tabella 1:\\
 
 \begin{table}[H]
 \centering    
@@ -75,7 +75,7 @@ $70^{\circ}$ & 0.940 & $39^{\circ}$ & 0.629 \\
 \caption{Angoli di rifrazione per la lente semicilindrica.}
 \end{table}
 
-È stata fatta quindi un'interpolazione lineare passante per l'origine tra $\sin\theta_{\text{inc}}$ e $\sin\theta_{\text{rif}}$ dalla quale si ricava k=0.66 $\pm$ 0.01. Il test di adattamento del $\chi^2$ restituisce un p-value del $99.3\%$, mostrando un'ottima compatibilità con il modello lineare.
+È stata fatta quindi un'interpolazione lineare passante per l'origine tra $\sin\theta_{\text{inc}}$ e $\sin\theta_{\text{rif}}$ dalla quale si ricava k=0.66 $\pm$ 0.01. Il test di adattamento del $\chi^2$ restituisce un p-value del $99.3\%$, il che indica un'ottima compatibilità con il modello teorico.
 Si riporta di seguito il grafico:
 \begin{figure}[h!]
     \centering
@@ -88,7 +88,7 @@ Dalla legge di Snell si ricava $k=\dfrac{n_{\text{aria}}}{n_{\text{plexiglass}}}
 Approssimando $n_{\text{aria}}=1$, si ottiene\\ $n_{\text{plexiglass}}=1.50 \pm 0.02 \label{misura-1}$.
 \newpage
 Le stesse misure sono state ripetute facendo incidere il raggio luminoso sulla parte curva della lente.
-Per entrambi i lati della lente è stata quindi verificata la reversibilità del cammino ottico. Si riportano di seguito i dati:\\
+Per entrambi i lati della lente è stata quindi verificata la reversibilità del cammino ottico. Si riportano i dati in Tabella 2:\\
 
 \begin{table}[htbp]
 \centering
@@ -107,12 +107,20 @@ $\theta_{\text{inc}}$ & $\theta_{\text{rif}}$ & $\theta'_{\text{inc}}$ & $\theta
 70$^\circ$ & 39$^\circ$ & 39$^\circ$ & 68$^\circ$ & & 70$^\circ$ & 111$^\circ$ & 111$^\circ$ & 69$^\circ$ \\
 \bottomrule
 \end{tabular}
-\caption{Confronto diretto degli angoli incidenti e rifratti per la reversibilità. Sono state omesse le incertezze di \ang{1} su tutte le misure.}
+\caption{Confronto diretto degli angoli incidenti e rifratti per la reversibilità, con annesse compatibilità. Sono state omesse le incertezze di \ang{1} su tutte le misure.}
 \label{tab:confronto_diretto}
 \end{table}
-Le misure indicano in generale una compatibilità tra $\theta_{\text{\text{inc}}}$ e $\theta'_{\text{\text{rif}}}$ entro due deviazioni standard. L'unica misura che presenta una compatibilità dubbia è per $\theta'_{\text{\text{rif}}}$=$\ang{57}$, nelle misure per il lato piatto della lente. Il t-test restituisce infatti t=2.12, che corrisponde a una compatibilità del 4.4\%, di poco sotto alla soglia di accettabilità standard del 5\%.
+Le misure indicano in generale una compatibilità tra $\theta_{\text{\text{inc}}}$ e $\theta'_{\text{\text{rif}}}$ entro due deviazioni standard. L'unica misura che presenta una compatibilità dubbia è per $\theta'_{\text{\text{rif}}}$=$\ang{57}$, nelle misure per il lato piatto della lente. Il t-test restituisce infatti $t_0$=2.12, calcolato come 
 
-Infine, è stato misurato l'angolo critico sul lato curvo, ovvero l'angolo di incidenza che realizza la riflessione totale, che si ottiene quando il raggio luminoso viene rifratto parallelamente al lato piatto della lente e svanisce.\\ Il fenomeno si spiega con la legge di Snell: quando si ha riflessione totale $\theta_{\text{rif}}=\ang{90}$, dunque $\sin\theta_{\text{rif}}=1$, e per valori di $\theta_{inc}$ maggiori di $\theta_{critico}$ si dovrebbe avere $$\sin\theta_{rif}=\frac{n_1}{n_2}\sin\theta_{inc}>1$$ il che è impossibile. Quindi per angoli maggiori di $\theta_{critico}$  non si ha più rifrazione, ma riflessione.
-Per la lente semicilindrica il valore ottenuto è $\theta_{\text{critico}}=\qty{44 \pm 1}{\degree}$, da cui si può ricavare una seconda stima indipendente dell'indice di rifrazione del prlexiglass. Sempre approssimando $n_{aria}=1$, si ricava infatti $$n_{\text{plexglass}} = \frac{1}{\sin\theta_{\text{critico}}} = 1.49 \pm 0.03 \label{misura-2}$$
-Il test di compatibilità tra questa e quella precedente restituisce un valore di $t=0.17$, che corrisponde a 86.5\% di compatibilità tra le due misure. \\
-Inoltre, la riflessione totale spiega anche il fatto che non ci sia una relazione lineare tra i seni calcolati per le misure sul lato curvo della lente: le ultime 3 misure sono state effettuate oltre al limite dell'angolo critico, ottenendo così una riflessione anziché una rifrazione. 
+\begin{equation}
+    t_0 = \frac{\abs{x_1-x_2}}{\sqrt{{\sigma}_{x_1}^2+{\sigma}_{x_2}^2}}
+    \label{eq:t-test}
+\end{equation} 
+
+che corrisponde a una compatibilità del 4.4\%, di poco sotto alla soglia di accettabilità standard del 5\%.
+
+Infine, è stato misurato l'angolo critico sul lato curvo, ovvero l'angolo di incidenza per cui si ha la riflessione totale, che si verifica quando il raggio luminoso viene rifratto parallelamente al lato piatto della lente e svanisce.\\ Il fenomeno si spiega con la legge di Snell: quando si ha riflessione totale $\theta_{\text{rif}}=\ang{90}$, dunque $\sin\theta_{\text{rif}}=1$, e per valori di $\theta_{inc}$ maggiori di $\theta_{critico}$ si dovrebbe avere $$\sin\theta_{rif}=\frac{n_1}{n_2}\sin\theta_{inc}>1$$ il che è impossibile. Quindi per angoli maggiori di $\theta_{critico}$  non si ha più rifrazione, ma riflessione.
+Per la lente semicilindrica il valore ottenuto è $\theta_{\text{critico}}=\qty{44 \pm 1}{\degree}$, da cui si può ricavare una seconda stima indipendente dell'indice di rifrazione del plexiglass. Sempre approssimando $n_{aria}=1$, si ricava infatti $$n_{\text{plexglass}} = \frac{1}{\sin\theta_{\text{critico}}} = 1.49 \pm 0.03 \label{misura-2}$$
+Il test di compatibilità tra questa misura e quella precedente restituisce, tramite la relazione \eqref{eq:t-test}, un valore di $t_0=0.17$, che corrisponde a 86.5\% di compatibilità tra le due misure. \\
+Inoltre, la riflessione totale spiega anche il fatto che non ci sia una relazione lineare tra i seni calcolati per le misure sul lato curvo della lente. Le ultime 3 misure sono state infatti 
+effettuate oltre al limite dell'angolo critico, ottenendo così una riflessione anziché una rifrazione. 
