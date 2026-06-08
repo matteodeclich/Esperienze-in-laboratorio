@@ -1,5 +1,9 @@
 \section{Legge dei punti coniugati e ingrandimento}
+<<<<<<< HEAD
 L'ultima fase dell'esperienza riguarda l'ottica delle lenti sottili. Una lente sottile doppio-convessa in plastica trasparente ha un'indice di rifrazione maggiore dell'aria. Pertanto, la luce che attraversa una lente subirà, per la legge di Snell, due rifrazioni consecutive. Un fascio di raggi paralleli incidenti in una lente viene concentrato in un punto F detto punto focale o fuoco. La distanza tra il punto focale e l'asse della lente sottile viene detta distanza focale e indicata con $f$. Si indicano invece con $p$ e $q$ rispettivamente la distanza oggetto-lente e la distanza lente-immagine.
+=======
+L'ultima sezione dell'esperienza riguarda l'ottica delle lenti sottili. Una lente sottile doppio-convessa in plastica trasparente ha un'indice di rifrazione maggiore dell'aria. Pertanto, la luce che attraversa una lente subirà, per la legge di Snell, due rifrazioni consecutive. Un fascio di raggi paralleli incidenti in una lente viene concentrato in un punto F detto punto focale o fuoco. La distanza tra il punto focale e l'asse della lente sottile viene detta distanza focale e indicata con $f$. Si indicano invece con $p$ e $q$ rispettivamente la distanza oggetto-lente e la distanza lente-immagine.
+>>>>>>> b9e3332eb635e543262b0d2aeddd57a2876acfc8
 Queste distanze sono legate tra loro dalla legge dei punti coniugati\\
 \begin{equation}
     \frac{1}{f} = \frac{1}{p} + \frac{1}{q}
@@ -16,7 +20,11 @@ e per geometria
     \label{eq:ingrandimento-teorico}
 \end{equation}
 Dalla legge dei punti coniugati si può inoltre ricavare una distanza minima tra schermo e sorgente oltre la quale non è più possibile mettere a fuoco l'immagine. Sia $D=p+q$ la distanza: posso sostituire $q=D-p$ nella \eqref{eq:punti-coniugati} e ottenere $$\frac{1}{f}=\frac{D}{(D-p)\;p}$$
+<<<<<<< HEAD
 Sviluppando i calcoli si ottiene un'equazione di secondo grado nell'incognita $p$, che ha soluzioni reali solo per $\Delta\geq0$, ovvero per $D \geq 4f$, da cui $D_{\text{min}}=4f \label{distanza-minima}$.
+=======
+Sviluppando i calcoli si ottiene un'equazione di secondo grado nell'incognita $p$, che ha soluzioni reali solo per $\Delta \geq 0$, ovvero per $D \geq 4f$, da cui $D_{min}=4f \label{distanza-minima}$.
+>>>>>>> b9e3332eb635e543262b0d2aeddd57a2876acfc8
 
 Questa fase dell'esperienza ha lo scopo di verificare la legge dei punti coniugati misurando la distanza focale di due lenti a focale diversa con un banco ottico e di confrontare l'ingrandimento sperimentale con quello previsto da \eqref{eq:ingrandimento-teorico}. A tal fine un'immagine millimetrata a forma di croce viene proiettata attraverso la lente su uno schermo posto a distanze variabili dalla sorgente. Per ciascuna distanza si misurano due valori distinti di  $p$ e $q$ cambiando di posizione la lente, data la natura simmetrica della relazione \eqref{eq:punti-coniugati}. Si interpolano linearmente $\frac{1}{p}$ e $\frac{1}{q}$ e si ricava la distanza focale dall'inverso del parametro corrispondente all'intercetta. Infine si calcola dalla relazione \eqref{eq:ingrandimento-sperimentale} l'ingrandimento sperimentale e lo si confronta con quello teorico previsto dalla relazione \eqref{eq:ingrandimento-teorico}.
 \subsection{Lente con focale di \qty{250}{mm}}
@@ -57,8 +65,13 @@ Successivamente sono stati interpolati linearmente $\frac{1}{p}$ e $\frac{1}{q}$
     \caption{Interpolazione lineare tra $\frac{1}{p}$ e $\frac{1}{q}$}
     \label{fig:2}
 \end{figure}
+<<<<<<< HEAD
 Dall'interpolazione si ricava un coefficiente angolare $b = (-1.02 \pm 0.02)$, compatibile con $-1$, come previsto da \eqref{eq:punti-coniugati}, e l'intercetta $a = \qty{4.04 \pm 0.05 e-3}{\milli\meter\tothe{-1}}$, da cui si ottiene $f = \qty{247.5 \pm 3.1}{mm}$.\\
 Il test del $\chi^2$ restituisce un $\tilde{\chi}_o^2= 0.38$, che per otto gradi di libertà indica un adattamento col modello lineare del 93.2\%.
+=======
+Dall'interpolazione si ricava un coefficiente angolare $b = (-1.02 \pm 0.02)$, compatibile con $-1$, come previsto da \eqref{eq:punti-coniugati}, e l'intercetta $a = \qty{4.04 \pm 0.05 e-3}{\milli\meter\tothe{-1}}$, da cui si ricava $f = \qty{247.5 \pm 3.1}{mm}$.\\
+Il test del $\chi^2$ restituisce un $\tilde{\chi_o}^2= 0.38$, che per otto gradi di libertà indica un adattamento col modello lineare del 93.2\%.
+>>>>>>> b9e3332eb635e543262b0d2aeddd57a2876acfc8
 Dalla relazione \eqref{eq:t-test} si ricava $t_0=0.80$, associato a una compatibilità del 42.37\% con la distanza focale indicata sulla lente.
 
 Si riportano quindi nella Tabella 6 gli ingrandimenti trasversali sperimentali misurati per $L_{\text{oggetto}}$=\qty{40 \pm 1}{\milli\meter} e i valori teorici calcolati tramite la relazione \eqref{eq:ingrandimento-teorico}. \\
@@ -88,7 +101,7 @@ Si riportano quindi nella Tabella 6 gli ingrandimenti trasversali sperimentali m
 \label{tab:ingrandimenti_1}
 \end{table}
 
-Si considera un'incertezza di \qty{1}{mm}, corrispondente alla precisione dello strumento di misura, sia sui valori di  valori di $L_{\text{misurato}}$ sia sulla lunghezza fissa del braccio trasversale. Queste incertezze sono state poi propagate nei calcoli. Per quanto riguarda $p$ e $q$, gli errori considerati sono gli stessi del punto precedente.\\
+Per l'ingrandimento sperimentale si stima un'incertezza di \qty{1}{mm}, corrispondente alla precisione dello strumento di misura, sia per il valore di $L_{immagine}$, sia per quello di $L_{oggetto}$. Per quanto riguarda $p$ e $q$, gli errori stimati sono gli stessi del punto precedente. Queste incertezze sono state poi propagate nei calcoli.\\
 La compatibilità tra i valori sperimentali e quelli teorici è stata verificata tramite la relazione \eqref{eq:t-test}. Per ogni coppia di dati si è ottenuto $t_0<2$, confermando la compatibilità statistica delle misure. \\
 È stata infine misurata la distanza minima sperimentale tra schermo e sorgente, pari a \qty{999 \pm 5}{mm}, compatibile con quella \hyperref[distanza-minima]{teorica}, che per la lente usata corrisponde a \qty{1000}{mm}. L'incertezza di 5 mm è stata valutata sperimentalmente sulla base del range di
 distanze in cui è stato osservato il fenomeno.
@@ -129,7 +142,11 @@ L'interpolazione lineare con due parametri liberi tra $\frac{1}{p}$ e $\frac{1}{
     \caption{Interpolazione lineare tra $\frac{1}{p}$ e $\frac{1}{q}$}
     \label{fig:3}
 \end{figure}
+<<<<<<< HEAD
 Il test del $\chi^2$ restituisce un $\tilde{\chi}_o^2= 0.14$ ,che per sei gradi di libertà indica un adattamento col modello lineare del 99\%.
+=======
+Il test del $\chi^2$ restituisce un $\tilde{\chi_o}^2= 0.14$ ,che per sei gradi di libertà indica un adattamento col modello lineare del 99\%.
+>>>>>>> b9e3332eb635e543262b0d2aeddd57a2876acfc8
 Il t-test restituisce $t_0$=0.86, associato a una compatibilità del 39.0\% con la distanza focale indicata sulla lente.
 \newpage
 Sono poi stati raccolti i dati sugli ingrandimenti dell per quattro distanze tra sorgente e schermo, che vengono riportati nella Tabella 8. La figura ingrandita attraverso la lente è la medesima del punto precedente. \\ 

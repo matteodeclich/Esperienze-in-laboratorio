@@ -75,7 +75,11 @@ $70^{\circ}$ & 0.940 & $39^{\circ}$ & 0.629 \\
 \caption{Angoli di rifrazione per la lente semicilindrica.}
 \end{table}
 
+<<<<<<< HEAD
 È stata effettuata un'interpolazione lineare passante per l'origine tra $\sin\theta_{\text{inc}}$ e $\sin\theta_{\text{rif}}$, dalla quale si ricava k=0.66 $\pm$ 0.01. Il test del $\chi^2$ restituisce un $\tilde{\chi}_o^2= 0.10$, che corrisponde a una compatibilità adattamento del $99.3\%$.
+=======
+Si è effettuata un'interpolazione lineare passante per l'origine tra $\sin\theta_{\text{inc}}$ e $\sin\theta_{\text{rif}}$, dalla quale si ricava k=0.66 $\pm$ 0.01. Il test del $\chi^2$ restituisce un $\tilde{\chi_o}^2= 0.10$, che corrisponde a una compatibilità adattamento del $99.3\%$.
+>>>>>>> b9e3332eb635e543262b0d2aeddd57a2876acfc8
 Si riporta di seguito il grafico:
 \begin{figure}[h!]
     \centering
@@ -119,9 +123,9 @@ Le misure indicano in generale una compatibilità tra $\theta_{\text{\text{inc}}
 
 che corrisponde a una compatibilità del 4.4\%, di poco sotto alla soglia di accettabilità standard del 5\%.
 
-Infine, è stato misurato l'angolo critico sul lato curvo, ovvero l'angolo di incidenza per cui si ha la riflessione totale, che si verifica quando il raggio luminoso viene rifratto parallelamente al lato piatto della lente e svanisce.\\
-Siano $n_1$ l'indice di rifrazione del plexiglass e $n_{2} = 1$, quello dell'aria, con $n_1>n_2$. Quando si ha riflessione totale $\theta_{\text{rif}}=\ang{90}$, dunque $\sin\theta_{\text{rif}}=1$, e per valori di $\theta_{inc}$ maggiori di $\theta_{critico}$ si dovrebbe avere
-$$\sin\theta_{inc}=\frac{n_2}{n_1}\sin\theta_{inc}=n_1\sin\theta_{\text{rif}}>1$$ il che è impossibile. Quindi per angoli maggiori di $\theta_{critico}$  non si ha più rifrazione, ma riflessione.
+Infine, è stato misurato l'angolo critico sul lato curvo, ovvero l'angolo di incidenza per cui si ha la riflessione totale, che si verifica nel passaggio da un materiale più denso a uno meno denso, quando il raggio luminoso viene rifratto parallelamente al lato piatto della lente e svanisce.\\
+Siano $n_1$, l'indice di rifrazione del plexiglasse, e $n_{2} = 1$, quello dell'aria, con $n_1>n_2$: quando si ha riflessione totale $\theta_{\text{rif}}=\ang{90}$, dunque $\sin\theta_{\text{rif}}=1$, e per valori di $\theta_{inc}$ maggiori di $\theta_{critico}$ si dovrebbe avere
+$$\sin\theta_{rif}=n_1\sin\theta_{inc}>n_1\sin\theta_{\text{rif}}>1$$ il che è impossibile. Quindi per angoli maggiori di $\theta_{critico}$  non si ha più rifrazione, ma riflessione.
 Per la lente semicilindrica il valore ottenuto è $\theta_{\text{critico}}=\qty{44 \pm 1}{\degree}$, da cui si può ricavare una seconda stima indipendente dell'indice di rifrazione del plexiglass. Sempre approssimando $n_{aria}=1$, si ricava infatti $$n_{\text{plexglass}} = \frac{1}{\sin\theta_{\text{critico}}} = 1.49 \pm 0.03 \label{misura-2}$$
 Il test di compatibilità tra questa misura e quella precedente restituisce, tramite la relazione \eqref{eq:t-test}, un valore di $t_0=0.17$, che corrisponde a 86.5\% di compatibilità tra le due misure. \\
 Inoltre, la riflessione totale spiega anche il fatto che non ci sia una relazione lineare tra i seni calcolati per le misure sul lato curvo della lente. Le ultime 3 misure sono state infatti 
