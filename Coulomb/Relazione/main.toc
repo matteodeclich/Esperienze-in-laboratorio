@@ -8,4 +8,3 @@
 \contentsline {section}{\numberline {4}Misura della costante di torsione del filo}{7}{section.4}%
 \contentsline {section}{\numberline {5}Misura della costante dielettrica del vuoto}{8}{section.5}%
 \contentsline {section}{\numberline {6}Conclusioni}{8}{section.6}%
-\contentsline {section}{Riferimenti bibliografici}{9}{section*.11}%
