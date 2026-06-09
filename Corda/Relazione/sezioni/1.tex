@@ -1,9 +1,14 @@
 \section{Apparato sperimentale e obiettivi}
 L'esperienza consiste nello studio della propagazione di onde elastiche trasversali su una corda vibrante tesa e nell'osservazione delle onde stazionarie che si instaurano quando la corda viene sollecitata da una forza periodica esterna. 
 
-Quando una perturbazione si propaga lungo una corda tesa, le vibrazioni di questa si verificano perpendicolarmente alla direzione di propagazione dell'onda, dando origine a onde trasversali. Se la corda è fissata agli estremi, l'onda incidente viene riflessa e si propaga in direzione opposta. Se nel mentre sopraggiunge un'altra onda, esse si incontrano e lo spostamento totale del mezzo è dato dalla somma degli spostamenti dovuti alle singole onde, secondo il principio di sovrapposizione. Questo avviene solamente per particolari valori della frequenza della forzante, per i quali sia contenuto sulla corda un numero intero di semi-lunghezze d'onda. Le onde stazionarie presentano punti fissi detti nodi, nei quali l'ampiezza dell'oscillazione è nulla, e punti di massima oscillazione detti ventri o antinodi.
+Quando una perturbazione si propaga lungo una corda tesa, le vibrazioni di questa si verificano perpendicolarmente alla direzione di propagazione dell'onda, dando origine a onde trasversali, che possono essere descritte come funzioni di spazio $x$ e tempo $t$. Se la corda è fissata agli estremi, l'onda incidente viene riflessa e si propaga in direzione opposta. Se nel mentre sopraggiunge un'altra onda, esse si incontrano e lo spostamento totale del mezzo è dato dalla somma degli spostamenti dovuti alle singole onde, secondo il principio di sovrapposizione, e si ha:
+\begin{equation}
+    y(x,t) = 2A \sin\left(\frac{2\pi }{\lambda}x\right) \cos(2\pi f_n t)
+    \label{eq:onda_stazionaria}
+\end{equation}
+dove $A$ è l'ampiezza massima, $\lambda$ è la lunghezza d'onda ed $f_n$ la sua frequenza. Si instaurano così onde stazionarie, dove la dipendenza spaziale è separata da quella temporale. Questo avviene solamente per particolari valori della frequenza della forzante: affinchè agli estremi della corda lo spostamento sia sempre nullo (nodi), sostituendo la lunghezza $L$ della corda nella relazione \eqref{eq:onda_stazionaria}, è necessario che sulla corda sia presente un numero intero di semi-lunghezze d'onda.
 
-L'apparato sperimentale utilizzato è costituito da una corda fissata a un oscillatore elettromeccanico pilotato da un generatore di funzioni sinusoidali e da un sistema di carrucola e contrappesi per regolare la tensione.
+L'apparato sperimentale è costituito da più corde, ciascuna con diversa massa lineare, da un sistema di sospensione, da un oscillatore elettromeccanico pilotato da un generatore di funzioni e da un sistema di carrucola e contrappesi per regolare la tensione, oltre a un metro a nastro e una bilancia analitica.
 Gli obiettivi dell'esperienza sono i seguenti:
 
 \begin{itemize}
@@ -11,3 +16,4 @@ Gli obiettivi dell'esperienza sono i seguenti:
     \item studiare la dipendenza tra frequenza delle armoniche e numero armonico, tensione, lunghezza della corda e massa lineare;
     \item determinare la velocità di propagazione delle onde sulla corda e confrontarla con il valore teorico previsto dal modello fisico.
 \end{itemize}
+\newpage
