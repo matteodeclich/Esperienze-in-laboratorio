@@ -10,28 +10,28 @@ Quando un raggio luminoso attraversa un prisma a facce parallele, subisce due ri
         \coordinate (D) at (2.5,0); 
         \coordinate (E) at (-1.5, 1.7);
         \coordinate (F) at (0,1.7);
-        \coordinate (G) at (-1.5, 1.2);
+        \coordinate (G) at (-1.5, 2.3);
         \coordinate (H) at (4,1.2);
         \coordinate (I) at (2.5, 1.2);
-        \coordinate (J) at (4, 1.7);
+        \coordinate (J) at (4, 0.6);
         % --- DISEGNO DEL TRAPEZIO RETTANGOLO ---
         \draw[thick, fill=blue!5] (A) -- (B) -- (C) -- (D) -- cycle;
         \pic [draw, angle radius=1cm, angle eccentricity=1.6, fill=green!22] {angle = A--B--C};
         \node[anchor=north] at (-0.5,5) [font=\small] {$\alpha=\ang{45}$};
-        \draw[red, thick] (-1.5, 1.2)--(0, 1.7);
+        \draw[red, thick] (-1.5, 2.3)--(0, 1.7);
         \draw[red, thick] (0,1.7)--(2.5, 1.2);
-        \draw[red, thick] (2.5, 1.2)--(4, 1.7);
+        \draw[red, thick] (2.5, 1.2)--(4, 0.6);
         \draw[dashed] (-1.5, 1.7)--(0,1.7);
         \draw[dashed] (2.5, 1.2)--(4,1.2);
         \node[anchor=north] at (-0.5,5) [font=\small] {$\alpha=\ang{45}$};
-        \pic [draw, angle radius=1cm, "$\theta$", angle eccentricity=1.6, fill=red!22] {angle = E--F--G};
-        \pic [draw, angle radius=1cm, "$\theta$"{right, xshift=20pt, yshift=3pt} angle eccentricity=1.6, fill=red!22] {angle = H--I--J};
+        \pic [draw, angle radius=1cm, "$\theta$", angle eccentricity=1.6, fill=red!22] {angle = G--F--E};
+        \pic [draw, angle radius=1cm, "$\theta$", angle eccentricity=1.6, fill=red!22] {angle = J--I--H};
         % --- AGGIUNTA: Prolungamento raggio incidente per evidenziare d ---
-        \draw[dotted, black, thick] (0,1.7) -- (3.5, 2.866666666666);
+        \draw[dotted, black, thick] (0,1.7) -- (4, 0.1);
         
         % --- AGGIUNTA: Evidenziazione distanza d tra le parallele ---
-        \draw[<->, blue] (3.7, 1.6) -- (3.3, 2.8);
-        \node[blue, right] at (3, 2.1) {$d$};
+        \draw[<->, blue] (4, 0.6) -- (3.827586207, 0.1689655172);
+        \node[blue, right] at (4.03, 0.3) {$d$};
         
         % --- AGGIUNTA: Spessore h sul lato più in basso ---
         \draw[<->, >=stealth] (0, -0.3) -- (2.5, -0.3);
